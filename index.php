@@ -46,7 +46,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 } elseif($role == "dean"){
                     $conn->query("INSERT INTO dean(userName,fName, lName, mobile, deptID) VALUES('$username', '$fname', '$lname', '$mobile', '$deptID')");
                 } elseif($role == "manager"){
-                    $conn->query("INSERT INTO tournamentmanager(userName, fName, lName, mobile, deptID) VALUES('$username', '$fName', '$lName', '$mobile', '$deptID')");
+                    $conn->query("INSERT INTO tournamentmanager(userName,fName, lName, mobile, deptID) VALUES('$username', '$fname', '$lname', '$mobile', '$deptID')");
                 }
                 echo "Registration successful. <a href='login.php'>Login here</a><br>";
             } else {

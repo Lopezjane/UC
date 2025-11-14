@@ -21,7 +21,10 @@ include 'db.php';
         <input type="submit" value="Manage Departments">
     </form>
     <form action="event.php" method="get">
-        <input type="submit" value="Manage events">
+        <input type="submit" value="Manage events ">
+    </form>
+    <form action="admin.athlete.php" method="get">
+        <input type="submit" value="Manage athletes ">
     </form>
 
     <hr>
